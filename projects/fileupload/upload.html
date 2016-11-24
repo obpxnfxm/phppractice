@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+	<title>Administration - upload new files</title>
+</head>
+<body>
+	<h1>上传文件</h1>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<div>
+			<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+			<label for="userfile">上传文件:</label>
+			<input type="file" name="userfile" id="userfile" />
+			<input type="submit" value="上传" />
+		</div>
+	</form>
+	<br />
+	<p><a href="browsedir.php">查看已上传文件</a></p>
+	<p><a href="browsedir2.php">查看已上传文件(使用dir类)</a></p>
+	<p><a href="scandir.php">查看按字母顺序排序的已上传文件</a></p>
+</body>
+</html>

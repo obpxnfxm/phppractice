@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="../../css/main.css" />
+	<title>浏览FTP目录</title>
+</head>
+<body>
+	<h1 id="browseftp">浏览FTP目录</h1>
+	<p>(FTP 地址格式示例：210.34.246.224 或 ftp.company.com)</p>
+	<form action="filebrowse.php" method="post">
+		<p><label for="ftpaddress">FTP地址：</label><input type="input" name="ftpaddress" id="ftpaddress" value="210.34.246.224" required/></p>
+		<p><label for="username">用 户 名：</label><input type="input" name="username" id="username" value="test" required /></p>
+		<p><label for="password">密　 码 ：</label><input type="password" name="password" id="password" value="********" required /></p>
+		<p><label>FTP编码 ：<input type="radio" name="encoding" value="0" checked/>UTF-8<input type="radio" name="encoding" value="1"/>GBK</p>
+		<input type="submit" value="连接" />
+	</form>
+
+</body>
+</html>

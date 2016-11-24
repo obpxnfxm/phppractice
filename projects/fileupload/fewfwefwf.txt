@@ -1,0 +1,41 @@
+﻿
+Linux开启ssh服务
+首先更新源　　
+sudo apt-get update
+安装ssh服务
+sudo apt-get install openssh-server
+检测是否已启动
+ps -e | grep ssh
+看到有ssh字样，说明已启动，如果没有就手动启动
+
+/etc/init.d/ssh start
+配置ssh-server，配置文件位于/etc/ssh/sshd_config，默认端口为22，为了安全，一般自定义为其他端口，然后重启
+sudo /etc/init.d/ssh resart
+在windows中，使用putty或者SSH Secure Shell等登录虚拟机
+
+分类: linux
+
+
+
+vpn 错误789:l2tp 连接尝试失败,因为安全层在初始化与远程计算机的协商时遇到一个处理错误
+Windows配置VPN，选择“使用IPsec的第2层隧道协议(L2TP/IPSec)”时，
+
+XP系统肯定会报错，Win7系统正常，Win8系统大部分情况报错，有时正常。
+
+错误信息：错误789:l2tp 连接尝试失败,因为安全层在初始化与远程计算机的协商时遇到一个处理错误
+
+解决方法：
+
+修改注册表来实现
+
+1. 单击“开始”，单击“运行”，键入“regedit”，然后单击“确定”
+
+2. 找到下面的注册表子项，然后单击它： HKEY_LOCAL_MACHINE\ System\CurrentControlSet\Services\Rasman\Parameters
+
+3. 在“编辑”菜单上，单击“新建”->“DWORD值”
+
+4. 在“名称”框中，键入“ProhibitIpSec”
+
+5. 在“数值数据”框中，键入“1”，然后单击“确定”
+
+6. 退出注册表编辑器，然后重新启动计算机
