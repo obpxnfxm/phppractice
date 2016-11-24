@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<h1>Leo's Project</h1>
+		<div align="center">(项目地址：<a href="https://github.com/obpxnfxm/phppractice">https://github.com/obpxnfxm/phppractice</a>)</div>
 		<div class="mainpage">
 			<a href="admin">后台管理</a>
 		</div>

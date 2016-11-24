@@ -5,7 +5,7 @@ echo <<<theEnd
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="../css/main.css" />
-	<title>添加项目列表</title>
+	<title>项目列表</title>
 </head>	
 <body>
 theEnd;
@@ -18,6 +18,7 @@ theEnd;
 	} else {
 		echo <<<theEnd
 		<h1>Leo's Project</h1>
+		<div align="center">(项目地址：<a href="https://github.com/obpxnfxm/phppractice">https://github.com/obpxnfxm/phppractice</a>)</div>
 		<div class="projadd">
 			<a href="addform.php">添加项目 | </a>
 			<a href="index.php">返回后台主页 | </a>
